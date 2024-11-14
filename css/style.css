@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a, a:visited, a:active{
+    color:white;
+    text-decoration: none;
+}
+body {
+    font-family: 'Open sans', sans-sherif;
+    font-size: 18px;
+}
+
+nav{
+    background:black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.li-logo a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.li-logo i{
+    font-size: 250%;
+}
+
+main{
+    margin-top: 100px;
+    min-height: calc(100vh - 200px);
+    display: flex;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto;
+    width: calc(100% - 80px)
+}
+
+div.cards{
+    justify-content: center;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Dancing Script';
+    font-weight: 700;
+}
+
+article {
+    width: 45vw;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation-name: popup;
+    animation-duration: 0.8s;
+    margin-top: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+li {
+    list-style-position: inside;
+    max-width: 55ch;
+}
+
+.card{
+    list-style: none;
+    width: 400px;
+    aspect-ratio: 1/1.6;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+}
+
+.card:nth-of-type(2){
+    animation-duration: 0.2s;
+}
+
+.card header{
+    height: 55%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.header--vliegtuigen{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/pexels-daniel-kist-70955.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header--vliegtuigartikel2{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/pexels-pixabay-46148.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header--vliegtuigartikel3{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/pexels-pixabay-47044.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header--vliegtuigartikel4{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/pexels-mati-mango-11524258.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card header h2{
+    padding: 20px;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 180%;
+}
+
+form h2{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 200%;
+}
+
+.card section{
+    height: 35%;
+    padding: 20px;
+    border-bottom: 0.5px solid rgba(214, 214, 214,1);
+    border-left: 0.5px solid rgba(214, 214, 214,1);
+    border-right: 0.5px solid rgba(214, 214, 214,1);
+}
+
+.card footer{
+    height: 10%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(214, 214, 214,1);
+    border-left: 0.5px solid rgba(214, 214, 214,1);
+    border-right: 0.5px solid rgba(214, 214, 214,1);
+}
+
+.card footer a{
+    color: blue;
+}
+
+p {
+    max-width: 55ch;
+    margin: 0 auto;
+}
+
+article ul,
+article ol {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,textarea{
+    font-size: 100%;
+    font-family: 'Open Sans';
+    padding: 5px;
+}
+
+input[type="submit"]{
+    background: black;
+    border: none;
+    width: 200px;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+.footer{
+    height: 100px;
+    background:black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p{
+    margin: 0;
+    padding: 0 40px;
+}
+@media screen and (max-width: 1000px) {
+    body{
+        font-size: 14px;
+    }
+    article{
+        width: 100%;
+    }
+    h1{
+        font-size: 220%;
+    }
+    nav{
+        padding: 10px;
+    }
+
+    .cards{
+        padding: 20px 0;
+    }
+
+    .footer p:nth-of-type(2){
+        display: none;
+    }
+}
+
+@keyframes popup {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
